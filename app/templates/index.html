@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybr1 Sitemap Generator</title>
+    <!-- Add your stylesheet link here (Bootstrap, Tailwind CSS, or custom CSS) -->
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to Cybr1 Sitemap Generator</h1>
+        <p>Enter a URL to generate its sitemap in your desired format.</p>
+
+        <form action="/generate_sitemap" method="post">
+            <div class="form-group">
+                <label for="urlInput">Website URL:</label>
+                <input type="url" class="form-control" id="urlInput" name="url" placeholder="Enter URL" required>
+            </div>
+            <div class="form-group">
+                <label for="formatSelect">Sitemap Format:</label>
+                <select class="form-control" id="formatSelect" name="format">
+                    <option value="xml">XML</option>
+                    <option value="html">HTML</option>
+                    <option value="txt">TXT</option>
+                    <!-- Add other formats as needed -->
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Generate Sitemap</button>
+        </form>
+    </div>
+
+    <!-- Add your JavaScript files here (jQuery, Bootstrap JS, etc.) -->
+</body>
+</html>
+
