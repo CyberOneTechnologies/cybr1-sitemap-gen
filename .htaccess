@@ -1,0 +1,13 @@
+# Turn on URL rewriting
+RewriteEngine On
+
+# Set the base URL for rewrites
+RewriteBase /
+
+# Conditions to ensure that the file or directory does not exist
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Rewrite all URLs to index.php, appending the query string
+RewriteRule ^ index.php [QSA,L]
+

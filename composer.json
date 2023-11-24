@@ -1,0 +1,28 @@
+{
+    "name": "cyberonetechnologies/cybr1-sitemap-gen",
+    "description": "A PHP-based sitemap generator.",
+    "type": "project",
+    "require": {
+        "php": "^7.4|^8.0",
+        "guzzlehttp/guzzle": "^7.0"  // Example: Guzzle is a PHP HTTP client
+    },
+    "autoload": {
+        "psr-4": {
+            "CyberOne\\SitemapGenerator\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Your Name",
+            "email": "your.email@example.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require-dev": {
+        "phpunit/phpunit": "^9.0"  // Example: PHPUnit for unit testing
+    },
+    "config": {
+        "vendor-dir": "vendor/"
+    }
+}
+
